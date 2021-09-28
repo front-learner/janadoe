@@ -1,3 +1,3 @@
 # janadoe
 
-site #URL
+site URL:  https://front-learner.github.io/janadoe/dist/
