@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jana Doe</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <img class="header__logo" src="./images/logo.svg" alt="logo" />
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link" href="#">Jane Doe</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#">Tell us about yourself</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#">Slider</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="about">
+          <div class="container">
+            <div class="about__content">
+              <div class="about__box-img">
+                <img
+                  class="about__img"
+                  src="./images/avatar.jpg"
+                  alt="avatar"
+                />
+              </div>
+              <div class="about__box-text">
+                <h1 class="about__title">Jane Doe</h1>
+                <div class="about__data">
+                  <div class="about__span-box">
+                    <span class="about__span about__span--violet">Date of birth</span>
+                    <span class="about__span about__span--black"> 21.04.2001</span>
+                  </div>
+                  <div class="about__span-box">
+                    <span class="about__span about__span--violet">Gender</span>
+                    <span class="about__span about__span--black"> Female</span>
+                  </div>
+                  <div class="about__span-box">
+                    <span class="about__span about__span--violet">Country</span>
+                    <span class="about__span about__span--black"> Corea</span>
+                  </div>
+                </div>
+                <h3 class="about__text-title">About me</h3>
+                <p class="about__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="about__text">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tell">
+          <div class="container">
+            <div class="tell__content">
+              <h2 class="tell__title">
+                Tell us about yourself
+              </h2>
+              <form id="form" class="tell__form">
+                <div class="tell__box active">
+                  <div class="tell__box-item">
+                    <label for="name" class="tell__label">Your name</label>
+                    <input required id="name" placeholder="Tell us your name" type="text" class="tell__input" />
+                  </div>
+                  <div class="tell__box-item tell__box-item--mb">
+                    <label for="gender" class="tell__label">Your gender</label>
+                    <select placeholder="Choose your gender" size="1" class="tell__input" name="select" id="gender">
+                      <option selected disabled hidden>Choose your gender</option>
+                      <option  value="Male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="tell__box">
+                  <div class="tell__box-item">
+                    <label for="country" class="tell__label">Your country</label>
+                    <input disabled required id="country" placeholder="Where are you from?" type="text" class="tell__input" />
+                  </div>
+                  <div class="tell__box-item">
+                    <label for="city" class="tell__label">Your City</label>
+                    <input disabled required id="city" placeholder="Your native city" type="text" class="tell__input" />
+                  </div>
+                  <div class="tell__box-item">
+                    <label for="birth" class="tell__label">Your date of birth</label>
+                    <input disabled required id="birth" placeholder="dd.mm.yyyy" type="date" class="tell__input" />
+                  </div>
+                </div>
+                <div class="tell__box tell__box--f">
+                  <label for="file" class="tell__label--f">
+                    <span class="tell__file-text tell__span">Proof your identity with some documents</span>
+                    <span class="tell__file-btn tell__span">Add document</span>
+                  </label>
+                  <input disabled required id="file" placeholder="Proof your identity with some documents" type="file" class="tell__input tell__input--file" />
+
+                </div>
+                <!-- <div class="tell__box"></div>  preview -->
+              </form>
+              <div class="tell__ok">
+                <button class="tell__btn">Send info</button>
+                <img src="./images/ok.svg" alt="ok" class="tell__img">
+                <span class="tell__ok-text">Completed</span> 
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- slider -->
+        <section class="slider">
+          <div class="container-fluid">
+            <div id="slider" class="slider__content">
+            
+              <input class="slider__input" checked type="radio" name="slider" id="switch1" />
+              <input class="slider__input" type="radio" name="slider" id="switch2" />
+              <input class="slider__input" type="radio" name="slider" id="switch3" />
+    
+              <div class="slider__carousel">
+                <div class="slider__overflow">
+                  <div id="carousel" class="slider__carousel-content">
+                    <div id="item" class="slider__carousel-item">
+                      <picture class="slider__img">
+                        <source media="(max-width: 850px)" srcset="./images/slide-little.jpg">
+                        <img class="slider__img" src="./images/slide.jpg" alt="slide" />
+                      </picture>
+                      <div class="slider__box">
+                      <h2 class="slider__title">Slide this photo</h2>
+                      <p class="slider__text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur
+                      </p>
+                      </div>
+                    </div>
+                    <div id="item" class="slider__carousel-item">
+                      <picture class="slider__img">
+                        <source media="(max-width: 850px)" srcset="./images/slide-little.jpg">
+                        <img class="slider__img" src="./images/slide.jpg" alt="slide" />
+                      </picture>
+                      <div class="slider__box">
+                      <h2 class="slider__title">Slide this photo</h2>
+                      <p class="slider__text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur
+                      </p>
+                      </div>
+                    </div>
+                    <div id="item" class="slider__carousel-item">
+                      <picture class="slider__img">
+                        <source media="(max-width: 850px)" srcset="./images/slide-little.jpg">
+                        <img class="slider__img" src="./images/slide.jpg" alt="slide" />
+                      </picture>
+                      <div class="slider__box">
+                      <h2 class="slider__title">Slide this photo</h2>
+                      <p class="slider__text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur
+                      </p>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+              <!-- Arrow -->
+              <div id="controls" class="slider__controls">
+                <label class="slider__controls-label" for="switch1"></label>
+                <label class="slider__controls-label" for="switch2"></label>
+                <label class="slider__controls-label" for="switch3"></label>
+    
+              </div>
+              
+              <!-- Circle -->
+              <div id="active" class="slider__active">
+                <label class="slider__active-label" for="switch1"></label>
+                <label class="slider__active-label" for="switch2"></label>
+                <label class="slider__active-label" for="switch3"></label>
+    
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
